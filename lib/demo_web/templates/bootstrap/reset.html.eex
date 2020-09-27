@@ -1,4 +1,8 @@
 <h1>Bootstrap v4.5.2 - Reset</h1>
+<a href="/bootstrap/reset" class="btn btn-outline-info">Bootstrap</a>
+<a href="/bootstrap/reset" class="btn btn-outline-info active">Reset</a>
+<a href="/bootstrap/effective" class="btn btn-outline-info">Effective</a>
+
 <h2>Fonts</h2>
 <div class="container example">
 <ol>

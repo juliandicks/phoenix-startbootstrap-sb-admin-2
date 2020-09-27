@@ -217,8 +217,14 @@
   background-color: #212529;
 }
 
-.container.example {
-  border: 2px lightblue solid;
-  padding: 1rem;
-  margin-bottom: 1px;
+.container {
+  &.example {
+    border: 2px lightblue solid;
+    padding: 1rem;
+    margin-bottom: 1px;
+
+    >.progress+.progress {
+      margin-top: 1rem;
+    }
+  }
 }
