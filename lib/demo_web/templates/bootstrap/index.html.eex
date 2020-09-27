@@ -1,0 +1,172 @@
+<h1>Bootstrap v4.5.2</h1>
+<h2>Colours</h2>
+<div class="row">
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-blue">Blue</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-indigo">Indigo</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-purple">Purple</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-pink">Pink</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-red">Red</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-orange">Orange</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-yellow">Yellow</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-green">Green</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-teal">Teal</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-cyan">Cyan</div>
+    </div>
+</div>
+<h2>Theme Colours</h2>
+<div class="row">
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-primary">Primary</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-secondary">Secondary</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-success">Success</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-danger">Danger</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-warning">Warning</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-info">Info</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-light">Light</div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-3 mb-3 swatch-dark">Dark</div>
+    </div>
+</div>
+<h2>Grays</h2>
+<div class="row mb-3">
+    <div class="col-md-4">
+        <div class="p-3 swatch-100">100</div>
+        <div class="p-3 swatch-200">200</div>
+        <div class="p-3 swatch-300">300</div>
+        <div class="p-3 swatch-400">400</div>
+        <div class="p-3 swatch-500">500</div>
+        <div class="p-3 swatch-600">600</div>
+        <div class="p-3 swatch-700">700</div>
+        <div class="p-3 swatch-800">800</div>
+        <div class="p-3 swatch-900">900</div>
+    </div>
+</div>
+<h2>Grid System</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm bg-primary">
+            One of three columns
+        </div>
+        <div class="col-sm bg-secondary">
+            One of three columns
+        </div>
+        <div class="col-sm bg-info">
+            One of three columns
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col bg-primary">
+            1 of 2
+        </div>
+        <div class="col bg-secondary">
+            2 of 2
+        </div>
+    </div>
+    <div class="row">
+        <div class="col bg-primary">
+            1 of 3
+        </div>
+        <div class="col bg-secondary">
+            2 of 3
+        </div>
+        <div class="col bg-info">
+            3 of 3
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-6 bg-primary">
+            2 of 3 (wider)
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-5 bg-primary">
+            2 of 3 (wider)
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+</div>
+<h1>ExEffectiveBootstrap v0.1.17</h1>
+<h2>Alerts</h2>
+<%= alert(:danger, "This is bad") %>
+<%= alert(:success, "You did it!") %>
+<h2>Collapse</h2>
+<%= collapse("Click to expand") do %>
+<p>This is the expanded content</p>
+<% end %>
+<h2>Icons</h2>
+<%= icon("check") %>
+<%= icon("x", class: "small-1") %>
+<%= icon("wifi", class: "big-3") %>
+<%= link ["Next", icon("arrow-right")], to: "/", class: "btn btn-primary" %>
+<h2>Nav</h2>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">My Brand!</a>
+
+    <button class="navbar-toggler" data-aria-controls="navContent" data-aria-label="Toggle navigation"
+            data-target="#navContent" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav mr-auto">
+            <%= nav_link(@conn, "Root", to: "/") %>
+        </ul>
+    </div>
+</nav>
+<h2>Tabs</h2>
+<%= tabs do %>
+    <%= tab("One") do %>
+        <p>This is tab one</p>
+    <% end %>
+
+    <%= tab("Two") do %>
+        <p>This is tab two</p>
+    <% end %>
+<% end %>
