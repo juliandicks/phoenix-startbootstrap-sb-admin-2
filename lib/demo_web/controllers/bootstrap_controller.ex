@@ -10,4 +10,13 @@ defmodule DemoWeb.BootstrapController do
     |> render("index.html")
   end
 
+  def reset(conn, _params) do
+    conn
+    |> put_flash(:info, "Bootstrap tries to standardize the look and feel across browsers")
+    |> render("reset.html")
+  end
+
+  def effective(conn, _params) do
+    render(conn, "ex_effective.html")
+  end
 end

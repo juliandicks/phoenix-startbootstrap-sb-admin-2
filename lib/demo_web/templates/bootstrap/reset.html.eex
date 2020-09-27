@@ -1,0 +1,165 @@
+<h1>Bootstrap v4.5.2 - Reset</h1>
+<h2>Fonts</h2>
+<div class="container example">
+<ol>
+<li><b>Greek</b> Μπορώ να φάω σπασμένα γυαλιά χωρίς να πάθω τίποτα.
+</li><li><b>French</b>: Je peux manger du verre, ça ne me fait pas <!--de--> mal.
+</li><li><b>Spanish</b>: Puedo comer vidrio, no me hace daño.
+</li><li><b>English</b>: I can eat glass and it doesn't hurt me.
+</li><li><b>English</b> <i>(IPA):</i> [aɪ kæn iːt glɑːs ænd ɪt dɐz nɒt hɜːt miː] (Received Pronunciation)
+</li><li><b>Chinese</b>: <span lang="zh">我能吞下玻璃而不伤身体。</span>
+</li><li><b>Japanese</b>: <span lang="ja">私はガラスを食べられます。それは私を傷つけません。</span>
+</li><li><b>Korean</b>:  <span lang="ko">나는 유리를 먹을 수 있어요. 그래도 아프지 않아요</span>
+</li><li><b>Inuktitut</b> ᐊᓕᒍᖅ ᓂᕆᔭᕌᖓᒃᑯ ᓱᕋᙱᑦᑐᓐᓇᖅᑐᖓ
+</li></ol>
+</div>
+<h2>Heading Styles</h2>
+<div class="container example text-center">
+    <h1>h1. Bootstrap heading</h1>
+    <h2>h2. Bootstrap heading</h2>
+    <h3>h3. Bootstrap heading</h3>
+    <h4>h4. Bootstrap heading</h4>
+    <h5>h5. Bootstrap heading</h5>
+    <h6>h6. Bootstrap heading</h6>
+</div>
+<h2>Lists</h2>
+<div class="container example">
+<ul>
+    <li>Unordered Lists</li>
+    <li>and nested lists
+        <ul>
+            <li>Fish</li>
+            <li>Cakes</li>
+        </ul>
+    </li>
+    <li>Eget porttitor lorem</li>
+</ul>
+<ol>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+</ol>
+</div>
+<h2>Tables</h2>
+<div class="container example">
+<table>
+    <caption>
+        This is an example table, and this is its caption to describe the contents.
+    </caption>
+    <thead>
+    <tr>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+    </tr>
+    <tr>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+    </tr>
+    <tr>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<h2>Forms</h2>
+<div class="container example">
+    <form>
+        <fieldset>
+            <legend>Example legend</legend>
+            <p>
+                <label for="input">Example input</label>
+                <input type="text" id="input" placeholder="Example input">
+            </p>
+            <p>
+                <label for="select">Example select</label>
+                <select id="select">
+                    <option value="">Choose...</option>
+                    <optgroup label="Option group 1">
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                    </optgroup>
+                    <optgroup label="Option group 2">
+                        <option value="">Option 4</option>
+                        <option value="">Option 5</option>
+                        <option value="">Option 6</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" value="">
+                    Check this checkbox
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                    Option one is this and that
+                </label>
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Option two is something else that's also super long to demonstrate the wrapping of these fancy form
+                    controls.
+                </label>
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+                    Option three is disabled
+                </label>
+            </p>
+            <p>
+                <label for="textarea">Example textarea</label>
+                <textarea id="textarea" rows="3"></textarea>
+            </p>
+            <p>
+                <label for="date">Example date</label>
+                <input type="date" id="date">
+            </p>
+            <p>
+                <label for="time">Example time</label>
+                <input type="time" id="time">
+            </p>
+            <p>
+                <label for="output">Example output</label>
+                <output name="result" id="output">100</output>
+            </p>
+            <p>
+                <button type="submit">Button submit</button>
+                <input type="submit" value="Input submit button">
+                <input type="button" value="Input button">
+            </p>
+            <p>
+                <button type="submit" disabled="">Button submit</button>
+                <input type="submit" value="Input submit button" disabled="">
+                <input type="button" value="Input button" disabled="">
+            </p>
+        </fieldset>
+    </form>
+</div>
+<h2>Summary</h2>
+<div class="container example">
+    <details>
+        <summary>Some details</summary>
+        <p>More info about the details.</p>
+    </details>
+
+    <details>
+        <summary>Even more details</summary>
+        <p>Here are even more details about the details.</p>
+    </details>
+</div>

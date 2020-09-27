@@ -1,4 +1,4 @@
-<section class="phx-hero">
+<div class="section phx-hero">
   <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
   <p>Peace of mind from prototype to production</p>
 
@@ -11,10 +11,16 @@
     </datalist>
     <button class="btn btn-primary" type="submit" phx-disable-with="Searching...">Go to Hexdocs</button>
   </form>
-</section>
+</div>
 
-<section class="row">
-  <article class="col">
+<div class="row">
+  <div class="col">
+    <h2>This Template</h2>
+    <ul>
+      <li><a href="/bootstrap">Bootstrap</a></li>
+    </ul>
+  </div>
+  <div class="col">
     <h2>Resources</h2>
     <ul>
       <li>
@@ -27,8 +33,8 @@
         <a href="https://github.com/phoenixframework/phoenix/blob/v1.5/CHANGELOG.md">v1.5 Changelog</a>
       </li>
     </ul>
-  </article>
-  <article class="col">
+  </div>
+  <div class="col">
     <h2>Help</h2>
     <ul>
       <li>
@@ -44,5 +50,5 @@
         <a href="https://elixir-slackin.herokuapp.com/">Elixir on Slack</a>
       </li>
     </ul>
-  </article>
-</section>
+  </div>
+</div>

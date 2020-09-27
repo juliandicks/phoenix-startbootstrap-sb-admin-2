@@ -20,6 +20,8 @@ defmodule DemoWeb.Router do
     live "/", PageLive, :index
 
     get "/bootstrap", BootstrapController, :index
+    get "/bootstrap/reset", BootstrapController, :reset
+    get "/bootstrap/effective", BootstrapController, :effective
   end
 
   # Other scopes may use custom stacks.
