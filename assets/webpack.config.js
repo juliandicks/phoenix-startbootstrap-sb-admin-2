@@ -28,6 +28,13 @@ module.exports = (env, options) => {
     module: {
       rules: [
         {
+          test: require.resolve('jquery'),
+          use: [
+            { loader: 'expose-loader', options: '$' },
+            { loader: 'expose-loader', options: 'jQuery' }
+          ]
+        },
+        {
           test: /\.js$/,
           exclude: /node_modules/,
           use: {

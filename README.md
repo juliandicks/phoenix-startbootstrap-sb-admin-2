@@ -35,4 +35,6 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 1. mix phx.new .  --app demo --live
 1. cd assets && npm install && node node_modules/webpack/bin/webpack.js --mode development && cd ..
 1. mix ecto.create
-1. 
+1. mix phx.server
+1. added ex_effective_bootstrap 
+1.

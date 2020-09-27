@@ -3,16 +3,22 @@
 // its own CSS file.
 import "../css/app.scss"
 
-// webpack automatically bundles all modules in your
-// entry points. Those entry points can be configured
-// in "webpack.config.js".
-//
-// Import deps with the dep name or local files with a relative path, for example:
-//
-//     import {Socket} from "phoenix"
-//     import socket from "./socket"
-//
+import $ from "jquery"
+
+window.jQuery = $;
+window.$ = $;
+
+import "bootstrap"
 import "phoenix_html"
+import "ex_effective_bootstrap"
+
+// Use the following for an effective_form_for() form
+// inside a Phoenix LiveView live_render()
+import {EffectiveFormLiveSocketHooks} from "ex_effective_bootstrap"
+
+let Hooks = {}
+Hooks.EffectiveForm = new EffectiveFormLiveSocketHooks
+
 import {Socket} from "phoenix"
 import NProgress from "nprogress"
 import {LiveSocket} from "phoenix_live_view"
