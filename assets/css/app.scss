@@ -2,9 +2,12 @@
 
 //@import "bootstrap_overrides";
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+//@import "../node_modules/bootstrap/scss/bootstrap";
+@import "sb-admin-2";
+@import "sb-admin-2-overrides";
+@import "fontawesome-all.css";
 @import "../../deps/ex_effective_bootstrap/priv/static/ex_effective_bootstrap";
-
+@import "dataTables.bootstrap4";
 @import "../node_modules/nprogress/nprogress.css";
 
 /* LiveView specific classes for your customizations */
@@ -59,6 +62,7 @@
   text-decoration: none;
   cursor: pointer;
 }
+
 .invalid-feedback {
   color: #a94442;
   display: block;

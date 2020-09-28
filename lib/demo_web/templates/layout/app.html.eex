@@ -1,5 +1,2 @@
-<main role="main" class="container">
-  <h1>app.html.eex</h1>
-  <%= flash_alert(@conn) %>
-  <%= @inner_content %>
-</main>
+<%= flash_alert(@conn) %>
+<%= @inner_content %>

@@ -1,0 +1,9 @@
+.sidebar .nav-item {
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .sidebar .nav-item .nav-link {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

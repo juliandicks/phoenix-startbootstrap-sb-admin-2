@@ -1,54 +1,23 @@
-<div class="section phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>Peace of mind from prototype to production</p>
+<h1><i class="fab fa-phoenix-framework"></i> <%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
+<p>Peace of mind from prototype to production</p>
 
+<div class="card" style="width: 18rem;">
   <form phx-change="suggest" phx-submit="search">
-    <input type="text" name="q" value="<%= @query %>" placeholder="Live dependency search" list="results" autocomplete="off"/>
-    <datalist id="results">
-      <%= for {app, _vsn} <- @results do %>
+    <div class="card-header">
+      Live Search
+    </div>
+    <div class="card-body">
+      <input class="form-control" type="text" name="q" value="<%= @query %>" placeholder="Live dependency search"
+             list="results" autocomplete="off"/>
+      <datalist id="results">
+        <%= for {app, _vsn} <- @results do %>
         <option value="<%= app %>"><%= app %></option>
-      <% end %>
-    </datalist>
-    <button class="btn btn-primary" type="submit" phx-disable-with="Searching...">Go to Hexdocs</button>
+        <% end %>
+      </datalist>
+    </div>
+    <div class="card-footer">
+      <button class="btn btn-primary" type="submit" phx-disable-with="Searching...">Go to Hexdocs</button>
+    </div>
   </form>
 </div>
-
-<div class="row">
-  <div class="col">
-    <h2>This Template</h2>
-    <ul>
-      <li><a href="/bootstrap">Bootstrap</a></li>
-    </ul>
-  </div>
-  <div class="col">
-    <h2>Resources</h2>
-    <ul>
-      <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.5/CHANGELOG.md">v1.5 Changelog</a>
-      </li>
-    </ul>
-  </div>
-  <div class="col">
-    <h2>Help</h2>
-    <ul>
-      <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
-      <li>
-        <a href="https://elixir-slackin.herokuapp.com/">Elixir on Slack</a>
-      </li>
-    </ul>
-  </div>
-</div>
+<%= live_flash(@flash, :error) %>

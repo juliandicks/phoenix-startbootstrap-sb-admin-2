@@ -19,4 +19,8 @@ defmodule DemoWeb.BootstrapController do
   def effective(conn, _params) do
     render(conn, "ex_effective.html")
   end
+
+  def sb_admin_2(conn, _params) do
+    render(conn, "sb-admin-2.html")
+  end
 end

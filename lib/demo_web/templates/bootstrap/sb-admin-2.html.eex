@@ -1,0 +1,5 @@
+<h1>SB Admin 2</h1>
+<a href="/bootstrap" class="btn btn-outline-info">Bootstrap</a>
+<a href="/bootstrap/reset" class="btn btn-outline-info">Reset</a>
+<a href="/bootstrap/effective" class="btn btn-outline-info">Effective</a>
+<a href="/bootstrap/sb_admin_2" class="btn btn-outline-info active">SB Admin 2</a>

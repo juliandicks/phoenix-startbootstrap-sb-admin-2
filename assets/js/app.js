@@ -11,6 +11,12 @@ window.$ = $;
 import "bootstrap"
 import "phoenix_html"
 import "ex_effective_bootstrap"
+import "./sb-admin-2"
+import "./jquery.dataTables"
+import "./dataTables.bootstrap4"
+import "./Chart"
+import "./demo/chart-pie-demo"
+import "./demo/chart-area-demo"
 
 // Use the following for an effective_form_for() form
 // inside a Phoenix LiveView live_render()
@@ -40,6 +46,7 @@ liveSocket.connect()
 window.liveSocket = liveSocket
 
 $(function () {
-    $('[data-toggle="popover"]').popover();
-    $('[data-toggle="tooltip"]').tooltip();
-})
+  $('[data-toggle="popover"]').popover();
+  $('[data-toggle="tooltip"]').tooltip();
+  $('#dataTable').DataTable();
+});

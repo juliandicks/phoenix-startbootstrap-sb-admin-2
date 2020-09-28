@@ -22,6 +22,27 @@ defmodule DemoWeb.Router do
     get "/bootstrap", BootstrapController, :index
     get "/bootstrap/reset", BootstrapController, :reset
     get "/bootstrap/effective", BootstrapController, :effective
+    get "/bootstrap/sb_admin_2", BootstrapController, :sb_admin_2
+
+    get "/sb_admin2", SbAdmin2Controller, :index
+    get "/sb_admin2/buttons", SbAdmin2Controller, :buttons
+    get "/sb_admin2/cards", SbAdmin2Controller, :cards
+    get "/sb_admin2/colors", SbAdmin2Controller, :colors
+    get "/sb_admin2/borders", SbAdmin2Controller, :borders
+    get "/sb_admin2/animations", SbAdmin2Controller, :animations
+    get "/sb_admin2/other", SbAdmin2Controller, :other
+    get "/sb_admin2/tables", SbAdmin2Controller, :tables
+    get "/sb_admin2/blank", SbAdmin2Controller, :blank
+    get "/sb_admin2/404", SbAdmin2Controller, :page_404
+  end
+
+  scope "/", DemoWeb do
+    pipe_through :browser
+
+    get "/blank", PublicController, :blank
+    get "/login", PublicController, :login
+    get "/forgot-password", PublicController, :forgot_password
+    get "/register", PublicController, :register
   end
 
   # Other scopes may use custom stacks.

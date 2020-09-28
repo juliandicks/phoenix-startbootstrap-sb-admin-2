@@ -1,7 +1,8 @@
 <h1>ExEffectiveBootstrap v0.1.17</h1>
-<a href="/bootstrap/reset" class="btn btn-outline-info">Bootstrap</a>
+<a href="/bootstrap" class="btn btn-outline-info">Bootstrap</a>
 <a href="/bootstrap/reset" class="btn btn-outline-info">Reset</a>
 <a href="/bootstrap/effective" class="btn btn-outline-info active">Effective</a>
+<a href="/bootstrap/sb_admin_2" class="btn btn-outline-info">SB Admin 2</a>
 
 <h2>Alerts</h2>
 <%= alert(:danger, "This is bad") %>

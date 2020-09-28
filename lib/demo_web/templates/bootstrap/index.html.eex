@@ -1,7 +1,8 @@
 <h1>Bootstrap v4.5.2</h1>
-<a href="/bootstrap/reset" class="btn btn-outline-info active">Bootstrap</a>
+<a href="/bootstrap" class="btn btn-outline-info active">Bootstrap</a>
 <a href="/bootstrap/reset" class="btn btn-outline-info">Reset</a>
 <a href="/bootstrap/effective" class="btn btn-outline-info">Effective</a>
+<a href="/bootstrap/sb_admin_2" class="btn btn-outline-info">SB Admin 2</a>
 
 <h2>Colours</h2>
 <div class="row">
